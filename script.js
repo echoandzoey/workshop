@@ -5,16 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const reflectionPage = document.getElementById("reflection-page");
   const outcomePage = document.getElementById("outcome-page");
   const finalPage = document.getElementById("final-page");
+  const overviewPage = document.getElementById("overview-page");
 
   const introContent = document.getElementById("intro-content");
   const profileContent = document.getElementById("profile-content");
   const outcomeContent = document.getElementById("outcome-content");
+  const overviewContent = document.getElementById("overview-content");
   const reflectionInput = document.getElementById("reflection-input");
 
   const startBtn = document.getElementById("start-btn");
   const decisionBtns = document.querySelectorAll(".decision-btn");
   const submitReflectionBtn = document.getElementById("submit-reflection-btn");
   const nextProfileBtn = document.getElementById("next-profile-btn");
+  const showOverviewBtn = document.getElementById("show-overview-btn");
   const restartBtn = document.getElementById("restart-btn");
 
   // Workshop state
@@ -86,6 +89,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  showOverviewBtn.addEventListener("click", () => {
+    loadOverview();
+    showPage(overviewPage);
+  });
+
   restartBtn.addEventListener("click", () => {
     currentParticipantIndex = 0;
     userReflections = [];
@@ -101,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     reflectionPage.classList.add("hidden");
     outcomePage.classList.add("hidden");
     finalPage.classList.add("hidden");
+    overviewPage.classList.add("hidden");
 
     // Show requested page
     pageToShow.classList.remove("hidden");
@@ -149,6 +158,38 @@ document.addEventListener("DOMContentLoaded", () => {
               participant["A couple of years later"]
             }</div>
         `;
+  }
+
+  function loadOverview() {
+    let overviewHTML = "";
+
+    participants.forEach((participant, index) => {
+      const avatarPath = `images/${participant.name}.jpg`;
+
+      overviewHTML += `
+        <div class="overview-card">
+          <div class="avatar-container">
+            <img src="${avatarPath}" alt="${participant.name}" class="avatar">
+          </div>
+          <div class="profile-header">
+            <div class="profile-name">${participant.name}</div>
+            <div class="profile-age">${participant.age} years old</div>
+          </div>
+          <div class="overview-outcome">
+            <div class="profile-item"><strong>What ${
+              participant.name
+            } chose:</strong> ${
+        participant["What " + participant.name + " chose"]
+      }</div>
+            <div class="profile-item"><strong>A couple of years later:</strong> ${
+              participant["A couple of years later"]
+            }</div>
+          </div>
+        </div>
+      `;
+    });
+
+    overviewContent.innerHTML = overviewHTML;
   }
 
   function formatDecision(decision) {

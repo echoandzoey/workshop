@@ -141,3 +141,45 @@ h1 {
 .profile-details {
   margin-top: 20px;
 }
+
+/* Overview page styling */
+#overview-page .container {
+  max-width: 1000px;
+}
+
+.overview-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overview-card .avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.overview-card .profile-header {
+  margin-bottom: 15px;
+}
+
+.overview-card .profile-name {
+  font-size: 20px;
+}
+
+.overview-card .profile-age {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.overview-outcome {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+#overview-content {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
