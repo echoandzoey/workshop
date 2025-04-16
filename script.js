@@ -108,23 +108,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function loadCurrentProfile() {
     const participant = participants[currentParticipantIndex];
+    const avatarPath = `images/${participant.name}.jpg`;
 
     profileContent.innerHTML = `
-            <div class="profile-item"><strong>Name:</strong> ${participant.name}</div>
-            <div class="profile-item"><strong>Age:</strong> ${participant.age}</div>
-            <div class="profile-item"><strong>Living Situation:</strong> ${participant["living situation"]}</div>
-            <div class="profile-item"><strong>Free Time and Interests:</strong> ${participant["Free time and interests"]}</div>
-            <div class="profile-item"><strong>Current Situation:</strong> ${participant["Current situation"]}</div>
+            <div class="avatar-container">
+                <img src="${avatarPath}" alt="${participant.name}" class="avatar">
+            </div>
+            <div class="profile-header">
+                <div class="profile-name">${participant.name}</div>
+                <div class="profile-age">${participant.age} years old</div>
+            </div>
+            <div class="profile-details">
+                <div class="profile-item"><strong>Living Situation:</strong> ${participant["living situation"]}</div>
+                <div class="profile-item"><strong>Free Time and Interests:</strong> ${participant["Free time and interests"]}</div>
+                <div class="profile-item"><strong>Current Situation:</strong> ${participant["Current situation"]}</div>
+            </div>
         `;
   }
 
   function loadOutcome() {
     const participant = participants[currentParticipantIndex];
+    const avatarPath = `images/${participant.name}.jpg`;
 
     outcomeContent.innerHTML = `
-            <div class="profile-item"><strong>Name:</strong> ${
-              participant.name
-            }</div>
+            <div class="avatar-container">
+                <img src="${avatarPath}" alt="${
+      participant.name
+    }" class="avatar">
+            </div>
+            <div class="profile-header">
+                <div class="profile-name">${participant.name}</div>
+                <div class="profile-age">${participant.age} years old</div>
+            </div>
             <div class="profile-item"><strong>What ${
               participant.name
             } chose:</strong> ${
