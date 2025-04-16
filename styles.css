@@ -178,6 +178,15 @@ h1 {
   padding-top: 15px;
 }
 
+.overview-outcome .profile-item:nth-child(1),
+.overview-outcome .profile-item:nth-child(2) {
+  background-color: #f0f7ff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 3px solid #0066cc;
+}
+
 #overview-content {
   max-height: 70vh;
   overflow-y: auto;

@@ -165,6 +165,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     participants.forEach((participant, index) => {
       const avatarPath = `images/${participant.name}.jpg`;
+      const userDecision = userDecisions[index]
+        ? formatDecision(userDecisions[index])
+        : "No decision made";
+      const userReflection = userReflections[index] || "No reflection provided";
 
       overviewHTML += `
         <div class="overview-card">
@@ -176,6 +180,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="profile-age">${participant.age} years old</div>
           </div>
           <div class="overview-outcome">
+            <div class="profile-item"><strong>Your choice:</strong> ${userDecision}</div>
+            <div class="profile-item"><strong>Your reflection:</strong> ${userReflection}</div>
             <div class="profile-item"><strong>What ${
               participant.name
             } chose:</strong> ${
