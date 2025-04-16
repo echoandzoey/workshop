@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.decision-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.decision-btn {
+  margin: 10px 0;
+  width: 300px;
+}
+
+#reflection-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-item {
+  margin-bottom: 15px;
+}
+
+.profile-item strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.hidden {
+  display: none;
+}
+
+#intro-content {
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.role-description {
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+#outcome-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#final-page p {
+  text-align: center;
+  margin-bottom: 20px;
+}

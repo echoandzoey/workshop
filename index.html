@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Aid Workshop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="intro-page">
+      <h1>Workshop Participant Page</h1>
+      <div id="intro-content">
+        <!-- Intro content will be loaded from intro.json -->
+      </div>
+      <p class="role-description">
+        As an officer, you will review five applicants' profiles and decide on
+        appropriate financial aid options for each of them.
+      </p>
+      <button id="start-btn" class="btn">Start Workshop</button>
+    </div>
+
+    <div class="container hidden" id="profile-page">
+      <h1>Applicant Profile</h1>
+      <div id="profile-content">
+        <!-- Profile content will be loaded from profiles.json -->
+      </div>
+      <div class="decision-buttons">
+        <button class="btn decision-btn" data-decision="no-aid">
+          No financial aid needed
+        </button>
+        <button class="btn decision-btn" data-decision="loan">
+          Long-term loan plan
+        </button>
+        <button class="btn decision-btn" data-decision="personal-aid">
+          Personalized financial aid
+        </button>
+      </div>
+    </div>
+
+    <div class="container hidden" id="reflection-page">
+      <h1>Why do you feel this is what you need?</h1>
+      <textarea
+        id="reflection-input"
+        rows="6"
+        placeholder="Enter your reflection here..."
+      ></textarea>
+      <button id="submit-reflection-btn" class="btn">Submit</button>
+    </div>
+
+    <div class="container hidden" id="outcome-page">
+      <h1>Outcome</h1>
+      <div id="outcome-content">
+        <!-- Outcome content will be loaded from profiles.json -->
+      </div>
+      <button id="next-profile-btn" class="btn">Next Applicant</button>
+    </div>
+
+    <div class="container hidden" id="final-page">
+      <h1>Workshop Complete</h1>
+      <p>
+        Thank you for participating in this financial aid decision-making
+        workshop.
+      </p>
+      <p>
+        We hope this experience helped you reflect on the challenges of
+        financial aid decision-making.
+      </p>
+      <button id="restart-btn" class="btn">Restart Workshop</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Saved reflections
+reflections/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+
+# macOS files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/ 

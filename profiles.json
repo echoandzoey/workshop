@@ -1,0 +1,49 @@
+{
+  "participants": [
+    {
+      "name": "Koen",
+      "age": 23,
+      "living situation": "Lives in a solo studio in Rotterdam. Planning to move in with his girlfriend into a shared apartment soon.",
+      "Free time and interests": "Loves going to the local bouldering hall on weekends and planning spontaneous weekend trips with his girlfriend to nearby cities or nature spots.",
+      "Current situation": "Completed bachelor’s degree and accepted into a master’s program. Balancing part-time work, study, and quality time with his girlfriend while avoiding burnout.",
+      "What Koen chose": "Took a long-term loan of a few hundred euros per month to reduce working hours and save for trips.",
+      "A couple of years later": "Completed master’s degree, secured a full-time job, manages loan repayments confidently. Moved into a new apartment with his girlfriend, maintaining financial stability and balanced life."
+    },
+    {
+      "name": "Romé",
+      "age": 32,
+      "living situation": "Lives in The Hague with her boyfriend and their 8-year-old daughter in a modest apartment.",
+      "Free time and interests": "Prioritizes spending extra money on their daughter; family zoo visits are a favorite activity.",
+      "Current situation": "Works full-time as an assistant nurse. Boyfriend is ill and unemployed, leading to financial strain. Unable to afford daughter’s school trip.",
+      "What Romé chose": "Declined financial aid to avoid debt, relying solely on extra shifts.",
+      "A couple of years later": "Boyfriend’s prolonged illness caused debt accumulation and emotional strain. Eventually sought municipal help under worsened financial conditions."
+    },
+    {
+      "name": "Michael",
+      "age": 19,
+      "living situation": "Lives in a student house in Delft with three others; parents cover rent.",
+      "Free time and interests": "Enjoys student life: parties, study association activities, and trips with friends.",
+      "Current situation": "Underperformed in first year of bachelor’s, uncertain about study choice but plans to continue.",
+      "What Michael chose": "Used a long-term loan to fund social activities and trips, prioritizing student experiences.",
+      "A couple of years later": "Switched study programs, maintained social connections via loan-funded activities. Confident about future despite pending loan repayments."
+    },
+    {
+      "name": "Floris",
+      "age": 21,
+      "living situation": "Lives with parents in Rotterdam; restoring a classic motorcycle with his dad.",
+      "Free time and interests": "Passionate about motorcycles and spends time with high school friends.",
+      "Current situation": "Left previous education; starting an MBO program to eventually open a bike shop. Works part-time to fund hobbies.",
+      "What Floris chose": "Declined financial aid, relying on parents and part-time work to avoid debt.",
+      "A couple of years later": "Maintained stable routine but limited social network. Progressing slowly toward bike shop dream independently."
+    },
+    {
+      "name": "Natalie",
+      "age": 30,
+      "living situation": "Lives in Amsterdam with her husband; paused plans to start a family due to financial strain.",
+      "Free time and interests": "Previously enjoyed hiking trips in Germany/Belgium; now prioritizes budgeting.",
+      "Current situation": "Post-COVID business failure left significant debt. Attempting to rebuild finances without external help.",
+      "What Natalie chose": "Rejected financial aid and reinvested savings into a failed venture to regain control.",
+      "A couple of years later": "New venture failed, leading to rent arrears and municipal intervention. Now rebuilding with structured financial advice, regrets delayed help-seeking."
+    }
+  ]
+}
