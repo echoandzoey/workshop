@@ -19,21 +19,88 @@
       <button id="start-btn" class="btn">Start Workshop</button>
     </div>
 
+    <div class="container hidden" id="explanation-page">
+      <h1>How it works</h1>
+      <div class="explanation-content">
+        <p>
+          You'll be presented with a series of short sketches about different
+          people, each facing a unique life situation. These stories are based
+          on real-life experiences and aim to show the diversity of life paths
+          and the invisible forces, such as social norms, networks, and systemic
+          limitations, that shape financial decisions.
+        </p>
+        <p class="explanation-subtitle">For each person, ask yourself:</p>
+        <p class="explanation-question">What do I need?</p>
+        <p>You will have to choose between three options</p>
+
+        <div class="option-explanation">
+          <div class="option-badge">No financial aid needed</div>
+          <p>
+            You feel no need to use any form of financial or government support.
+          </p>
+        </div>
+
+        <div class="option-explanation">
+          <div class="option-badge">Long-term loan plan</div>
+          <p>
+            A flexible loan, similar to borrowing from a bank, with low interest
+            and a long repayment period (15–35 years). You decide how to use the
+            money.
+          </p>
+        </div>
+
+        <div class="option-explanation">
+          <div class="option-badge">Personalized financial aid</div>
+          <p>
+            This can range from light-touch advice to full financial oversight.
+            It could be a targeted subsidy or involve a financial officer
+            managing your finances, especially if you're struggling to manage
+            them on your own.
+          </p>
+        </div>
+
+        <p class="explanation-footer">
+          After making your choice, you'll be prompted to reflect on
+          <strong>why</strong> you made it.
+        </p>
+      </div>
+      <button id="continue-btn" class="btn">Continue</button>
+    </div>
+
+    <div class="container hidden" id="statement-page">
+      <h1>Why this matters</h1>
+      <div class="statement-content">
+        <p>
+          This tool is not about right or wrong choices. It's about empathy,
+          awareness, and reflection.
+        </p>
+        <p>
+          By walking through different perspectives, we hope this experience
+          sparks deeper understanding, meaningful conversations, and maybe even
+          a shift in how we view financial aid.
+        </p>
+      </div>
+      <button id="start-profiles-btn" class="btn">Start Profiles</button>
+    </div>
+
     <div class="container hidden" id="profile-page">
-      <h1>Applicant Profile</h1>
+      <h1 id="profile-title">Meet with Applicant</h1>
       <div id="profile-content">
         <!-- Profile content will be loaded from profiles.json -->
       </div>
-      <div class="decision-buttons">
-        <button class="btn decision-btn" data-decision="no-aid">
-          No financial aid needed
-        </button>
-        <button class="btn decision-btn" data-decision="loan">
-          Long-term loan plan
-        </button>
-        <button class="btn decision-btn" data-decision="personal-aid">
-          Personalized financial aid
-        </button>
+      <div class="decision-section">
+        <h2 class="decision-question">What do I need?</h2>
+        <div class="decision-buttons">
+          <button class="btn decision-btn" data-decision="no-aid">
+            No financial aid needed
+          </button>
+          <button class="btn decision-btn" data-decision="loan">
+            Long-term loan plan
+          </button>
+          <button class="btn decision-btn" data-decision="personal-aid">
+            Personalized financial aid
+          </button>
+        </div>
       </div>
     </div>
 

@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // DOM elements
   const introPage = document.getElementById("intro-page");
+  const explanationPage = document.getElementById("explanation-page");
+  const statementPage = document.getElementById("statement-page");
   const profilePage = document.getElementById("profile-page");
   const reflectionPage = document.getElementById("reflection-page");
   const outcomePage = document.getElementById("outcome-page");
@@ -14,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const reflectionInput = document.getElementById("reflection-input");
 
   const startBtn = document.getElementById("start-btn");
+  const continueBtn = document.getElementById("continue-btn");
+  const startProfilesBtn = document.getElementById("start-profiles-btn");
   const decisionBtns = document.querySelectorAll(".decision-btn");
   const submitReflectionBtn = document.getElementById("submit-reflection-btn");
   const nextProfileBtn = document.getElementById("next-profile-btn");
@@ -52,6 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Event listeners
   startBtn.addEventListener("click", () => {
+    showPage(explanationPage);
+  });
+
+  continueBtn.addEventListener("click", () => {
+    showPage(statementPage);
+  });
+
+  startProfilesBtn.addEventListener("click", () => {
     showPage(profilePage);
     loadCurrentProfile();
   });
@@ -105,6 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function showPage(pageToShow) {
     // Hide all pages
     introPage.classList.add("hidden");
+    explanationPage.classList.add("hidden");
+    statementPage.classList.add("hidden");
     profilePage.classList.add("hidden");
     reflectionPage.classList.add("hidden");
     outcomePage.classList.add("hidden");
@@ -118,6 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function loadCurrentProfile() {
     const participant = participants[currentParticipantIndex];
     const avatarPath = `images/${participant.name}.jpg`;
+
+    // Update page title with participant name
+    document.getElementById(
+      "profile-title"
+    ).textContent = `Meet with ${participant.name}`;
 
     profileContent.innerHTML = `
             <div class="avatar-container">

@@ -45,6 +45,18 @@ h1 {
   background-color: #333333;
 }
 
+.decision-section {
+  margin-top: 30px;
+}
+
+.decision-question {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .decision-buttons {
   display: flex;
   flex-direction: column;
@@ -191,4 +203,68 @@ h1 {
   max-height: 70vh;
   overflow-y: auto;
   padding-right: 10px;
+}
+
+/* Explanation page styling */
+.explanation-content {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.explanation-content p {
+  margin-bottom: 20px;
+}
+
+.explanation-subtitle {
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.explanation-question {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+.option-explanation {
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border-left: 3px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.option-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.explanation-footer {
+  margin-top: 30px;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+/* Statement page styling */
+.statement-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.statement-content p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #2c3e50;
 }
