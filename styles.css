@@ -31,7 +31,7 @@ h1 {
   width: 200px;
   margin: 20px auto;
   padding: 12px 20px;
-  background-color: #3498db;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -42,7 +42,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #2980b9;
+  background-color: #333333;
 }
 
 .decision-buttons {
@@ -116,7 +116,7 @@ h1 {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #3498db;
+  border: 4px solid #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

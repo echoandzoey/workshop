@@ -148,12 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="profile-item"><strong>A couple of years later:</strong> ${
               participant["A couple of years later"]
             }</div>
-            <div class="profile-item"><strong>Your Decision:</strong> ${formatDecision(
-              userDecisions[currentParticipantIndex]
-            )}</div>
-            <div class="profile-item"><strong>Your Reflection:</strong> ${
-              userReflections[currentParticipantIndex]
-            }</div>
         `;
   }
 
